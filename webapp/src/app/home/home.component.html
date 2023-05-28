@@ -1,0 +1,20 @@
+<div class="container">
+  <div class="row">
+    <div class="col-3"></div>
+    <div class="col-6">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Add visit</h5>
+          <p class="card-text"></p>
+          <div class="input-group mb-3">
+            <span class="input-group-text">User with IP:</span>
+            <input type="text" class="form-control" placeholder="IP" [(ngModel)]="ip" />
+            <span class="input-group-text">visited page on</span>
+            <input type="date" class="form-control" placeholder="Date" aria-label="Date" [ngModel]="date"/>
+            <button class="btn btn-outline-secondary" type="button" (click)="submit()">Submit</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
